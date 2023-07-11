@@ -404,6 +404,7 @@ class ADMBrowserApp(qtw.QApplication):
 
         # locate the configuration file to use.
         confpaths = [
+            './admbrowser.yaml',
             '~/.admbrowser.yaml',
             '~/.config/admbrowser.yaml',
             '/etc/admbrowser.yaml',

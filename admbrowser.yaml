@@ -9,7 +9,7 @@
 # This is the "home page" for your kiosk.  It will start here, and return here if reset
 # Default: about:blank
 
-start_url: "http://www.alandmoore.com"
+start_url: "https://jesuisun.dev/"
 
 # Whitelist
 # The "whitelist" is a list of domains or hosts which will be matched against any requested url.
@@ -68,13 +68,13 @@ timeout_mode: 'reset'
 # 1.0 is "unzoomed", 0.5 is half-size, 2.0 is double size, etc.
 # Default: 1.0
 
-#zoom_factor: 1.5
+zoom_factor: 1.5
 
 # Allow popups
 # "allow_popups" determines whether or not hyperlinks that try to open new browser windows/tabs will be honored or ignored.
 # Default: False
 
-#allow_popups: True
+allow_popups: True
 
 # Allow Plugins
 # "allow_plugins" determines if plugins like flash or java will be enabled.  They must be installed seperately on the system, of course
@@ -98,7 +98,7 @@ timeout_mode: 'reset'
 # Possible values are "ignore" and "strict"
 # Default: "strict"
 
-ssl_mode: "ignore"
+ssl_mode: "strict"
 
 # Window Size
 # "window_size" sets the default size of the application window.
@@ -117,7 +117,7 @@ ssl_mode: "ignore"
 # Set "navigation" to false to hide the top navigation bar.  Note that this makes bookmarks basically useless, since they won't appear.
 # Default: True
 
-#navigation: True
+navigation: True
 
 # "navigation_layout" is a list which sets the order and presence of buttons on the navbar from left to right.
 # Valid values include "back", "forward", "refresh", "stop", "zoom_in", "zoom_out", "bookmarks", "print",  and "quit".
@@ -139,20 +139,20 @@ icon_theme:  "oxygen"
 # "stylesheet" will assign a QT stylesheet to the application.  See examples for some style sheets.
 # The default is empty, which will use the default system theme
 
-#stylesheet: "examples/style.css"
+stylesheet: "examples/style.css"
 
 # Quit Button
 # "quit_button_text" changes the text on the quit/reset button at the upper right
 # default is "I'm Finished"
 
-#quit_button_text: "Quit"
+quit_button_text: "Quit"
 
 # "quit_button_mode" can be either 'close' or 'reset'
 # 'close' will cause the button to exit the program
 # 'reset' will simply clear the browser history and return to the main page.
 # default behavior is 'reset'
 
-#quit_button_mode: 'close'
+quit_button_mode: 'close'
 
 ##################
 # Error Messages #
@@ -166,7 +166,7 @@ icon_theme:  "oxygen"
 # Leave it commented to use the default text built into the browser.
 # Default: empty
 
-#page_unavailable_html: "examples/custom404.html"
+page_unavailable_html: "examples/custom404.html"
 
 # Network Down
 # "network_down_html" is the path to a *file* that contains html to be displayed whenever the start_url's host cannot be reached,
@@ -176,7 +176,7 @@ icon_theme:  "oxygen"
 # Leave it commented to use the default text built into the browser.
 # Default: empty
 
-#network_down_html: "examples/custom_network_down.html"
+network_down_html: "examples/custom_network_down.html"
 
 ############
 # Printing #
@@ -188,7 +188,7 @@ icon_theme:  "oxygen"
 # on the navigation bar too.
 # Default: False
 
-#allow_printing: True
+allow_printing: True
 
 # Several printing defaults can be set to allow silent printing. Please see the README.rst file for an explanation of all the options.
 # Default: empty

@@ -4,7 +4,7 @@
 # Popups are blocked so the child doesn't have to deal with multiple windows opening.  This can be changed, of course;
 # and you can, of course, add more sites.
 
-start_url: "http://www.starfall.com"
+start_url: "https://www.starfall.com"
 allow_plugins: True
 allow_popups: False
 whitelist: ['more.starfall.com', 'more2.starfall.com']
