@@ -125,7 +125,20 @@ class AdmWebView(qtwe.QWebEngineView):
             # we need to create a widget to contain the webview
             # since QWebEngineView objects apparently don't work as top-levels?
             self.popup = qtw.QWidget()
+
+            width = self.frameGeometry().width()
+            #print(f"createWindow width: {width}")
+
+            height = self.frameGeometry().height()
+            #print(f"createWindow height: {height}")
+
+            #self.popup.resize(1024, 800)
+            self.popup.resize(width, height)
+
+            #self.popup.resize(self.popup.sizeHint());
+
             self.popup.setLayout(qtw.QVBoxLayout())
+
             webview = AdmWebView(
                 self.config,
                 parent=None,
