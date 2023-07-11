@@ -130,6 +130,7 @@ class AdmWebView(qtwe.QWebEngineView):
             #print(f"createWindow width: {width}")
 
             height = self.frameGeometry().height()
+            #print(QGuiApplication.primaryScreen().availableGeometry().height())
             #print(f"createWindow height: {height}")
 
             #self.popup.resize(1024, 800)
